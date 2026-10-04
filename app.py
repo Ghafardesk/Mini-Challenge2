@@ -196,12 +196,17 @@ def run_florence_ocr(image: Image.Image, device: str) -> Tuple[str, float]:
         last_error = None
         for model_id in MODEL_CANDIDATES:
             try:
-                processor = AutoProcessor.from_pretrained(model_id, cache_dir=str(CACHE_DIR))
+                processor = AutoProcessor.from_pretrained(
+                    model_id,
+                    cache_dir=str(CACHE_DIR),
+                    trust_remote_code=True,
+                )
                 model = AutoModelForCausalLM.from_pretrained(
                     model_id,
                     cache_dir=str(CACHE_DIR),
                     torch_dtype=dtype,
                     low_cpu_mem_usage=True,
+                    trust_remote_code=True,
                 )
                 model.to(device_obj)
                 model.eval()
