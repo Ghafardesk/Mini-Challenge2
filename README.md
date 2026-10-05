@@ -25,10 +25,12 @@ hello everyone, im building an OCR software for AMD AI Academy challenge.
     python download_model.py
 
     if fail and huggingface need login, run this and input your hf token
+    ensure you are approved for using this model
+     
     huggingface-cli login
 
     and this is link for docker hub of this project: 
     https://hub.docker.com/repository/docker/ghafardesk/calisk-ocr/general
-    ensure you are approved for using this model
+   
     
-    huggingface-cli login
+   
