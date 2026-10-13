@@ -29,11 +29,12 @@ hello everyone, im building an OCR software for AMD AI Academy challenge.
      
     huggingface-cli login
 
-    and this is link for docker hub of this project: 
-    https://hub.docker.com/repository/docker/ghafardesk/calisk-ocr/general
+    
+and this is link for docker hub of this project: 
+https://hub.docker.com/repository/docker/ghafardesk/calisk-ocr/general
 
-    another link of Mini-Challenge 3:
-    https://github.com/Ghafardesk/Mini-Challenge3
+another link of Mini-Challenge 3:
+https://github.com/Ghafardesk/Mini-Challenge3
    
     
    
